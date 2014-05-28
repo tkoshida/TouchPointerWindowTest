@@ -7,23 +7,31 @@
 //
 
 #import "ViewController.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface ViewController ()
+@interface ViewController () <MFMailComposeViewControllerDelegate>
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (IBAction)composeEMail:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    if ([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *composeVC = [[MFMailComposeViewController alloc] init];
+        composeVC.mailComposeDelegate = self;
+        [self presentViewController:composeVC animated:YES completion:^{
+            ;
+        }];
+    }
 }
 
-- (void)didReceiveMemoryWarning
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [controller dismissViewControllerAnimated:YES completion:^{
+        ;
+    }];
 }
 
 @end

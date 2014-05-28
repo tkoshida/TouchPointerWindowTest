@@ -21,6 +21,8 @@
 		846A96481935876B00060048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846A962A1935876B00060048 /* UIKit.framework */; };
 		846A96501935876B00060048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846A964E1935876B00060048 /* InfoPlist.strings */; };
 		846A96521935876B00060048 /* ktTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A96511935876B00060048 /* ktTests.m */; };
+		846A965C1935879C00060048 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 846A965B1935879C00060048 /* MessageUI.framework */; };
+		846A965F193588EA00060048 /* KTouchPointerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A965E193588EA00060048 /* KTouchPointerWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		846A964D1935876B00060048 /* ktTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ktTests-Info.plist"; sourceTree = "<group>"; };
 		846A964F1935876B00060048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		846A96511935876B00060048 /* ktTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ktTests.m; sourceTree = "<group>"; };
+		846A965B1935879C00060048 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		846A965D193588EA00060048 /* KTouchPointerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTouchPointerWindow.h; sourceTree = "<group>"; };
+		846A965E193588EA00060048 /* KTouchPointerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTouchPointerWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846A965C1935879C00060048 /* MessageUI.framework in Frameworks */,
 				846A96291935876B00060048 /* CoreGraphics.framework in Frameworks */,
 				846A962B1935876B00060048 /* UIKit.framework in Frameworks */,
 				846A96271935876B00060048 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		846A96251935876B00060048 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				846A965B1935879C00060048 /* MessageUI.framework */,
 				846A96261935876B00060048 /* Foundation.framework */,
 				846A96281935876B00060048 /* CoreGraphics.framework */,
 				846A962A1935876B00060048 /* UIKit.framework */,
@@ -112,6 +119,8 @@
 		846A962C1935876B00060048 /* kt */ = {
 			isa = PBXGroup;
 			children = (
+				846A965D193588EA00060048 /* KTouchPointerWindow.h */,
+				846A965E193588EA00060048 /* KTouchPointerWindow.m */,
 				846A96351935876B00060048 /* AppDelegate.h */,
 				846A96361935876B00060048 /* AppDelegate.m */,
 				846A96381935876B00060048 /* Main.storyboard */,
@@ -251,6 +260,7 @@
 				846A963D1935876B00060048 /* ViewController.m in Sources */,
 				846A96371935876B00060048 /* AppDelegate.m in Sources */,
 				846A96331935876B00060048 /* main.m in Sources */,
+				846A965F193588EA00060048 /* KTouchPointerWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
